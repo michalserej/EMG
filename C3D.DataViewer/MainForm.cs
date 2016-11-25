@@ -43,6 +43,27 @@ namespace C3D.EMG
             }
         }
 
+        private void wczytajToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.dlgOpen.ShowDialog() == DialogResult.OK && !String.IsNullOrEmpty(this.dlgOpen.FileName))
+            {
+                this.OpenFile(this.dlgOpen.FileName);
+            }
+        }
+
+        private void przeładujToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(this._currentFileName))
+            {
+                this.OpenFile(this._currentFileName);
+            }
+        }
+
+        private void zamknijBadanieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.CloseFile();
+        }
+
 
         private void mnuExit_Click(object sender, EventArgs e)
         {
@@ -139,43 +160,23 @@ namespace C3D.EMG
             this.Text = MainForm.PROGRAM_TITLE;
 
             this.scMain.Panel2.Controls.Clear();
-            this.tvItems.Nodes.Clear();
+            this.Items.Nodes.Clear();
         }
 
         private void ShowTreeList()
         {
-            this.tvItems.Nodes.Clear();
+            this.Items.Nodes.Clear();
 
             TreeNode overview = TreeListHelper.GetOverviewNode(this._currentFile);
-            this.tvItems.Nodes.Add(overview);
-            this.tvItems.Nodes.Add(TreeListHelper.GetHeaderNode(this._currentFile));
-            this.tvItems.Nodes.Add(TreeListHelper.GetParametersNode(this._currentFile));
-            this.tvItems.Nodes.Add(TreeListHelper.Get3DDataNode(this._currentFile));
-            this.tvItems.Nodes.Add(TreeListHelper.GetAnalogDataNode(this._currentFile));
+            this.Items.Nodes.Add(overview);
+            this.Items.Nodes.Add(TreeListHelper.GetHeaderNode(this._currentFile));
+            this.Items.Nodes.Add(TreeListHelper.GetParametersNode(this._currentFile));
+            this.Items.Nodes.Add(TreeListHelper.Get3DDataNode(this._currentFile));
+            this.Items.Nodes.Add(TreeListHelper.GetAnalogDataNode(this._currentFile));
 
-            this.tvItems.CollapseAll();
-            this.tvItems.SelectedNode = overview;
+            this.Items.CollapseAll();
+            this.Items.SelectedNode = overview;
         }
 
-        private void wczytajToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.dlgOpen.ShowDialog() == DialogResult.OK && !String.IsNullOrEmpty(this.dlgOpen.FileName))
-            {
-                this.OpenFile(this.dlgOpen.FileName);
-            }
-        }
-
-        private void przeładujToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!String.IsNullOrEmpty(this._currentFileName))
-            {
-                this.OpenFile(this._currentFileName);
-            }
-        }
-
-        private void zamknijBadanieToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.CloseFile();
-        }
     }
 }

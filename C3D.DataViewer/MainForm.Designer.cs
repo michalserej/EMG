@@ -31,7 +31,7 @@
             this.ssMain = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.scMain = new System.Windows.Forms.SplitContainer();
-            this.tvItems = new System.Windows.Forms.TreeView();
+            this.Items = new System.Windows.Forms.TreeView();
             this.dlgOpen = new System.Windows.Forms.OpenFileDialog();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,7 +72,7 @@
             // 
             // scMain.Panel1
             // 
-            this.scMain.Panel1.Controls.Add(this.tvItems);
+            this.scMain.Panel1.Controls.Add(this.Items);
             this.scMain.Size = new System.Drawing.Size(884, 508);
             this.scMain.SplitterDistance = 250;
             this.scMain.SplitterWidth = 1;
@@ -80,13 +80,13 @@
             // 
             // tvItems
             // 
-            this.tvItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tvItems.FullRowSelect = true;
-            this.tvItems.Location = new System.Drawing.Point(0, 0);
-            this.tvItems.Name = "tvItems";
-            this.tvItems.Size = new System.Drawing.Size(250, 508);
-            this.tvItems.TabIndex = 0;
-            this.tvItems.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvItems_AfterSelect);
+            this.Items.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Items.FullRowSelect = true;
+            this.Items.Location = new System.Drawing.Point(0, 0);
+            this.Items.Name = "tvItems";
+            this.Items.Size = new System.Drawing.Size(250, 508);
+            this.Items.TabIndex = 0;
+            this.Items.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvItems_AfterSelect);
             // 
             // dlgOpen
             // 
@@ -182,7 +182,7 @@
         private System.Windows.Forms.StatusStrip ssMain;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.SplitContainer scMain;
-        private System.Windows.Forms.TreeView tvItems;
+        private System.Windows.Forms.TreeView Items;
         private System.Windows.Forms.OpenFileDialog dlgOpen;
         private System.Windows.Forms.MenuStrip mnuMain;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
