@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C3D.DataViewer.Status
+namespace C3D.EMG.Status
 {
     internal class ChartScaleStatus
     {

@@ -2,10 +2,10 @@
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-using C3D.DataViewer.Controls;
-using C3D.DataViewer.Status;
+using C3D.EMG.Controls;
+using C3D.EMG.Status;
 
-namespace C3D.DataViewer.Helper
+namespace C3D.EMG.Helper
 {
     /// <summary>
     /// 图表缩放辅助类

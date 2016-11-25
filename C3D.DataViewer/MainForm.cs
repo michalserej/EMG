@@ -2,10 +2,10 @@
 using System.IO;
 using System.Windows.Forms;
 
-using C3D.DataViewer.Controls;
-using C3D.DataViewer.Helper;
+using C3D.EMG.Controls;
+using C3D.EMG.Helper;
 
-namespace C3D.DataViewer
+namespace C3D.EMG
 {
     public partial class MainForm : Form
     {
@@ -43,20 +43,6 @@ namespace C3D.DataViewer
             }
         }
 
-        private void mnuOpen_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void mnuReload_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void mnuClose_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void mnuExit_Click(object sender, EventArgs e)
         {

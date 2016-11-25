@@ -2,7 +2,7 @@
 using System.Text;
 using System.Windows.Forms;
 
-namespace C3D.DataViewer.Helper
+namespace C3D.EMG.Helper
 {
     /// <summary>
     /// ListView扩展类

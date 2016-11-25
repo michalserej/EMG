@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 
-using C3D.DataViewer.Helper;
+using C3D.EMG.Helper;
 
-namespace C3D.DataViewer.Controls
+namespace C3D.EMG.Controls
 {
     public partial class AnalogLabelsControl : UserControl
     {

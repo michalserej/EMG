@@ -4,11 +4,11 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-using C3D.DataViewer.Gesture;
-using C3D.DataViewer.Helper;
-using C3D.DataViewer.Status;
+using C3D.EMG.Gesture;
+using C3D.EMG.Helper;
+using C3D.EMG.Status;
 
-namespace C3D.DataViewer.Controls
+namespace C3D.EMG.Controls
 {
     public partial class Point3DControl : UserControl
     {

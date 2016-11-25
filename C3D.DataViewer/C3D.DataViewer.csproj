@@ -7,7 +7,7 @@
     <ProjectGuid>{982104CC-B610-4771-8F30-AEF097BEB282}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>C3D.DataViewer</RootNamespace>
+    <RootNamespace>C3D.EMG</RootNamespace>
     <AssemblyName>C3D.DataViewer</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

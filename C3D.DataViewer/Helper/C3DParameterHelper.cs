@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C3D.DataViewer.Helper
+namespace C3D.EMG.Helper
 {
     /// <summary>
     /// C3D参数辅助类

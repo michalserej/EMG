@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace C3D.DataViewer.Controls
+namespace C3D.EMG.Controls
 {
     public partial class ParameterControl : UserControl
     {

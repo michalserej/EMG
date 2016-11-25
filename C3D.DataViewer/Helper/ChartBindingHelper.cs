@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace C3D.DataViewer.Helper
+namespace C3D.EMG.Helper
 {
     /// <summary>
     /// 图表数据绑定辅助类

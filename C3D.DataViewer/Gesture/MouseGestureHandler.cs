@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace C3D.DataViewer.Gesture
+namespace C3D.EMG.Gesture
 {
     /// <summary>
     /// 鼠标手势处理器

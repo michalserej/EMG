@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace C3D.DataViewer
+namespace C3D.EMG
 {
     static class Program
     {

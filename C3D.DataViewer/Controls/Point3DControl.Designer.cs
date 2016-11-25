@@ -1,4 +1,4 @@
-﻿namespace C3D.DataViewer.Controls
+﻿namespace C3D.EMG.Controls
 {
     partial class Point3DControl
     {
@@ -69,10 +69,10 @@
             this.chResidual = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chMask = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tcMain = new System.Windows.Forms.TabControl();
-            this.gestureHandler1 = new C3D.DataViewer.Gesture.MouseGestureHandler();
-            this.gestureHandler2 = new C3D.DataViewer.Gesture.MouseGestureHandler();
-            this.gestureHandler3 = new C3D.DataViewer.Gesture.MouseGestureHandler();
-            this.gestureHandler4 = new C3D.DataViewer.Gesture.MouseGestureHandler();
+            this.gestureHandler1 = new C3D.EMG.Gesture.MouseGestureHandler();
+            this.gestureHandler2 = new C3D.EMG.Gesture.MouseGestureHandler();
+            this.gestureHandler3 = new C3D.EMG.Gesture.MouseGestureHandler();
+            this.gestureHandler4 = new C3D.EMG.Gesture.MouseGestureHandler();
             this.mnuContextForData = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mnuCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.tpResidual.SuspendLayout();
@@ -545,10 +545,10 @@
             this.gestureHandler1.AutoRegister = true;
             this.gestureHandler1.BaseControl = this.chartX;
             this.gestureHandler1.SupportButton = System.Windows.Forms.MouseButtons.Left;
-            this.gestureHandler1.OnMouseGestureToLeft += new C3D.DataViewer.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler1.OnMouseGestureToRight += new C3D.DataViewer.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler1.OnMouseGestureToTop += new C3D.DataViewer.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
-            this.gestureHandler1.OnMouseGestureToBottom += new C3D.DataViewer.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler1.OnMouseGestureToLeft += new C3D.EMG.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler1.OnMouseGestureToRight += new C3D.EMG.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler1.OnMouseGestureToTop += new C3D.EMG.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler1.OnMouseGestureToBottom += new C3D.EMG.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
             this.gestureHandler1.OnMouseGestureUp += new System.Windows.Forms.MouseEventHandler(this.gesturehandler_OnMouseGestureUp);
             // 
             // gestureHandler2
@@ -556,10 +556,10 @@
             this.gestureHandler2.AutoRegister = true;
             this.gestureHandler2.BaseControl = this.chartY;
             this.gestureHandler2.SupportButton = System.Windows.Forms.MouseButtons.Left;
-            this.gestureHandler2.OnMouseGestureToLeft += new C3D.DataViewer.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler2.OnMouseGestureToRight += new C3D.DataViewer.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler2.OnMouseGestureToTop += new C3D.DataViewer.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
-            this.gestureHandler2.OnMouseGestureToBottom += new C3D.DataViewer.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler2.OnMouseGestureToLeft += new C3D.EMG.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler2.OnMouseGestureToRight += new C3D.EMG.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler2.OnMouseGestureToTop += new C3D.EMG.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler2.OnMouseGestureToBottom += new C3D.EMG.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
             this.gestureHandler2.OnMouseGestureUp += new System.Windows.Forms.MouseEventHandler(this.gesturehandler_OnMouseGestureUp);
             // 
             // gestureHandler3
@@ -567,10 +567,10 @@
             this.gestureHandler3.AutoRegister = true;
             this.gestureHandler3.BaseControl = this.chartZ;
             this.gestureHandler3.SupportButton = System.Windows.Forms.MouseButtons.Left;
-            this.gestureHandler3.OnMouseGestureToLeft += new C3D.DataViewer.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler3.OnMouseGestureToRight += new C3D.DataViewer.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler3.OnMouseGestureToTop += new C3D.DataViewer.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
-            this.gestureHandler3.OnMouseGestureToBottom += new C3D.DataViewer.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler3.OnMouseGestureToLeft += new C3D.EMG.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler3.OnMouseGestureToRight += new C3D.EMG.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler3.OnMouseGestureToTop += new C3D.EMG.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler3.OnMouseGestureToBottom += new C3D.EMG.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
             this.gestureHandler3.OnMouseGestureUp += new System.Windows.Forms.MouseEventHandler(this.gesturehandler_OnMouseGestureUp);
             // 
             // gestureHandler4
@@ -578,10 +578,10 @@
             this.gestureHandler4.AutoRegister = true;
             this.gestureHandler4.BaseControl = this.chartResidual;
             this.gestureHandler4.SupportButton = System.Windows.Forms.MouseButtons.Left;
-            this.gestureHandler4.OnMouseGestureToLeft += new C3D.DataViewer.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler4.OnMouseGestureToRight += new C3D.DataViewer.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler4.OnMouseGestureToTop += new C3D.DataViewer.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
-            this.gestureHandler4.OnMouseGestureToBottom += new C3D.DataViewer.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler4.OnMouseGestureToLeft += new C3D.EMG.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler4.OnMouseGestureToRight += new C3D.EMG.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler4.OnMouseGestureToTop += new C3D.EMG.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler4.OnMouseGestureToBottom += new C3D.EMG.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
             this.gestureHandler4.OnMouseGestureUp += new System.Windows.Forms.MouseEventHandler(this.gesturehandler_OnMouseGestureUp);
             // 
             // mnuContextForData

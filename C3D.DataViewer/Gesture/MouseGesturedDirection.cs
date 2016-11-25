@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C3D.DataViewer.Gesture
+namespace C3D.EMG.Gesture
 {
     /// <summary>
     /// 鼠标手势方向

@@ -1,4 +1,4 @@
-﻿namespace C3D.DataViewer
+﻿namespace C3D.EMG
 {
     partial class MainForm
     {

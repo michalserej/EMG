@@ -1,4 +1,4 @@
-﻿namespace C3D.DataViewer.Controls
+﻿namespace C3D.EMG.Controls
 {
     partial class AnalogSamplesControl
     {
@@ -48,7 +48,7 @@
             this.mnuVZoomReset = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLine2 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuShowMarker = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestureHandler = new C3D.DataViewer.Gesture.MouseGestureHandler();
+            this.gestureHandler = new C3D.EMG.Gesture.MouseGestureHandler();
             this.mnuContextForData = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mnuCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.tcMain.SuspendLayout();
@@ -264,10 +264,10 @@
             this.gestureHandler.AutoRegister = true;
             this.gestureHandler.BaseControl = this.chartView;
             this.gestureHandler.SupportButton = System.Windows.Forms.MouseButtons.Left;
-            this.gestureHandler.OnMouseGestureToLeft += new C3D.DataViewer.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler.OnMouseGestureToRight += new C3D.DataViewer.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
-            this.gestureHandler.OnMouseGestureToTop += new C3D.DataViewer.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
-            this.gestureHandler.OnMouseGestureToBottom += new C3D.DataViewer.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler.OnMouseGestureToLeft += new C3D.EMG.Gesture.MouseGestureToLeft(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler.OnMouseGestureToRight += new C3D.EMG.Gesture.MouseGestureToRight(this.gesturehandler_OnMouseGestureToLeftOrRight);
+            this.gestureHandler.OnMouseGestureToTop += new C3D.EMG.Gesture.MouseGestureToTop(this.gesturehandler_OnMouseGestureToTopOrBottom);
+            this.gestureHandler.OnMouseGestureToBottom += new C3D.EMG.Gesture.MouseGestureToBottom(this.gesturehandler_OnMouseGestureToTopOrBottom);
             this.gestureHandler.OnMouseGestureUp += new System.Windows.Forms.MouseEventHandler(this.gesturehandler_OnMouseGestureUp);
             // 
             // mnuContextForData
